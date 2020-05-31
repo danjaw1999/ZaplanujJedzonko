@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="icon" type="image/png" href="./images/ico.gif">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <header class="header-app">
+        <h1>
+            <a href="index.html">
+                <span id="first">Zaplanuj</span>
+                <span id="second">Jedzonko</span>
+            </a>
+        </h1>
+        <div class="header-user">
+            <p class="user-name">Imię</p>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+    <section class="app-container">
+        <section class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="app.html">Pulpit</a></li>
+                    <li><a href="recipes.html">Przepisy</a></li>
+                    <li><a href="schedules.html">Plany</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="main-app-section">
+            <div class="main-app-section-content">
+                <div class="recipes">
+                    <div class="recipes-head">
+                        <h2>Lista przepisów</h2>
+                        <i class="fas fa-plus-square button-add-recipe"></i>
+                    </div>
+                    <div class="recipes-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nazwa</th>
+                                    <th>Opis</th>
+                                    <th>Akcje</th>
+                                </tr>
+                            </thead>
+                            <tbody class="recipes-table-tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <section class="new-recipe-section">
+                <div class="new-recipe-header">
+                    <h3>EDYTUJ PRZEPIS</h3>
+                    <a href="#" id="saveAndClose">Zapisz i zamknij</a>
+                </div>
+                <div class="new-recipe-name">
+                    <h2>Nazwa przepisu</h2>
+                    <input type="text" id="recipe_name" placeholder="Podaj nazwę przepisu" />
+                </div>
+                <div class="new-recipe-dsc">
+                    <h2>Opis przepisu</h2>
+                    <textarea rows="3" id="recipe_desc"></textarea>
+                </div>
+                <div class="recipe-adding">
+                    <div class="recipe-instructions">
+                        <div class="new-recipe-instruction">
+                            <h3>INSTRUKCJE</h3>
+                            <div>
+                                <textarea rows="3" id="value_instruction"
+                                    placeholder="Wpisz instrukcję przyrządzania"></textarea>
+                                <button class="fas fa-plus-square" id="instruction_butt"></button>
+                            </div>
+                        </div>
+                        <div class="new-recipe-ingredients">
+                            <h3>SKŁADNIKI</h3>
+                            <div>
+                                <textarea id="value_ingredient" placeholder="Dodaj składnik"></textarea>
+                                <button class="fas fa-plus-square" id="ingredient_butt"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe-lists">
+                        <div class="recipe-instruction-list">
+                            <ol id="instruction_list"></ol>
+                        </div>
+                        <div class="recipe-ingredients-list">
+                            <ul id="ingredient_list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </section>
+
+    <script src="./js/recipes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+.main-app-section-content {
+  .recipes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-head {
+      width: 95%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 2px solid $light-grey-color;
+      h2 {
+        color: $custom-orange-color;
+        font-size: 1.7em;
+        text-transform: uppercase;
+      }
+      i {
+        cursor: pointer;
+        color: $green-color;
+        font-size: 2.5em;
+      }
+    }
+    &-table {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      table {
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: 93%;
+        thead {
+          padding: 5px 0;
+          border-top: 1px solid $light-grey-color;
+          display: block;
+          tr {
+            width: 100%;
+            color: $dark-grey-color;
+            font-size: 1.4em;
+            display: flex;
+            justify-content: space-between;
+            th {
+              padding: 5px 10px;
+              text-align: left;
+              text-transform: uppercase;
+              &:nth-child(1) {
+                width: 120px;
+              }
+              &:nth-child(2) {
+                width: 400px;
+              }
+              &:nth-child(3) {
+                width: 100%;
+              }
+              &:nth-child(4) {
+                width: 180px;
+              }
+            }
+          }
+        }
+        tbody {
+          width: 100%;
+          height: calc(100vh - 300px);
+          overflow-y: scroll;
+          display: block;
+          tr {
+            width: 100%;
+            border-top: 1px solid $light-grey-color;
+            color: $light-grey-color;
+            display: flex;
+            justify-content: space-between;
+            td {
+              padding: 10px 10px;
+              text-align: left;
+              &:nth-child(1) {
+                width: 120px;
+              }
+              &:nth-child(2) {
+                width: 400px;
+                font-size: 1.1em;
+              }
+              &:nth-child(3) {
+                width: 100%;
+                font-size: 1em;
+              }
+              &:nth-child(4) {
+                width: 150px;
+              }
+              i {
+                cursor: pointer;
+                margin-right: 5px;
+                font-size: 1.5em;
+                &:nth-child(1) {
+                  color: $yellow-color;
+                }
+                &:nth-child(2) {
+                  color: $dark-orange-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.new-recipe-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2em 2em;
+  padding-bottom: 1em;
+  border-bottom: 0.5px solid $light-grey-color;
+
+  h3 {
+    color: $custom-orange-color;
+    font-size: 2em;
+  }
+
+  a {
+    color: $white-color;
+    background-color: $custom-orange-color;
+    padding: 0.5em 0.5em;
+  }
+
+  .new-recipe-name {
+    display: flex;
+    flex-direction: row;
+    margin: 0.3em 2em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+    padding-right: 4em;
+    color: $light-grey-color;
+  
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+    }
+  
+    input {
+      border: 0.3px solid $light-grey-color;
+      width: 80%;
+      font-size: 1.2em;
+      color: $light-grey-color;
+      padding: 1em;
+      height: 2em;
+    }
+  }
+
+  .new-recipe-dsc {
+    display: flex;
+    flex-direction: row;
+    margin: 0.3em 2em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+    padding-right: 4em;
+    color: $light-grey-color;
+  
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+    }
+  
+    textarea {
+      border: 0.3px solid $light-grey-color;
+      width: 80%;
+      font-size: 1.2em;
+      color: $light-grey-color;
+      padding: 1em;
+    }
+  }
+  
+  .new-recipe-dsc textarea {
+    font-family: "Open Sans", sans-serif;
+    padding: 0.8rem;
+  }
+
+  .new-recipe-section {
+    display: flex;
+    background-color: $white-color;
+    border: dashed 1px $cumstom-grey-color;
+    margin: 0 3em;
+  }
+  .recipe-instructions {
+    display: flex;
+    flex-direction: row;
+    height: 17vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2em 2em;
+    padding-bottom: 1em;
+  
+    .new-recipe-instruction,
+    .new-recipe-ingredients {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1em;
+      textarea {
+        resize: none;
+      }
+    }
+    .new-recipe-ingredients {
+      margin-left: 2rem;
+    }
+  
+    h3 {
+      color: $cumstom-grey-color;
+      font-size: 2em;
+      border-bottom: 0.5px solid $light-grey-color;
+    }
+  
+    div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 2em 0;
+  
+      textarea {
+        border: 1px solid $light-grey-color;
+        color: $light-grey-color;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.2rem;
+        width: calc(100% - 3rem);
+        padding: 0.5rem;
+      }
+  
+      button {
+        width: 2.5rem;
+        height: 2.5rem;
+        color: $green-color;
+        font-size: 2.5em;
+        background: transparent;
+      }
+  
+      button:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .recipe-adding {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+  
+  .recipe-lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+  
+    .recipe-instruction-list,
+    .recipe-ingredients-list {
+      overflow-y: scroll;
+      width: 50%;
+      max-height: 30%;
+      margin-right: 2rem;
+      ul,
+      ol {
+        font-family: "Open Sans", sans-serif;
+        color: $cumstom-grey-color;
+        font-size: 1.2rem;
+        i.fas {
+          font-size: 1.2rem;
+          font-weight: lighter;
+        }
+        i.fa-edit {
+          color: $light-orange-color;
+        }
+        i.fa-trash-alt {
+          color: red;
+        }
+      }
+      ul {
+        padding-left: 2rem;
+        list-style-type: disc;
+      }
+      ol {
+        padding-left: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+section.form {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $cumstom-grey-color;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 0 auto;
+
+    h3 {
+      color: $white-color;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    .input_button {
+      display: flex;
+      input {
+        text-rendering: auto;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        cursor: text;
+        padding: 2px;
+        width: 200px;
+        border-width: 2px;
+        height: 2.4rem;
+      }
+      button {
+        background-color: $custom-orange-color;
+        width: 100px;
+        height: 2.4rem;
+        border: none;
+        cursor: pointer;
+        padding: 1px 7px 2px;
+        color: $white-color;
+        font-weight: 600;
+        font-size: 1rem;
+        &:hover {
+          background-color: $light-orange-color;
+          cursor: pointer;
+        }
+        &:active {
+          border-width: 2px;
+        }
+      }
+    }
+  }
+}

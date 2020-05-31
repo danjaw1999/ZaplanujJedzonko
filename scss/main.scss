@@ -1,0 +1,36 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+// Base
+@import "./base/colors";
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/default";
+
+// Module
+@import "./module/logo";
+@import "./module/app-desktop-section";
+
+// Layout landingpage
+@import "./layout/landing-page/header";
+@import "./layout/landing-page/slider";
+@import "./layout/landing-page/action";
+@import "./layout/landing-page/about-app";
+@import "./layout/landing-page/form";
+@import "./layout/landing-page/about-author";
+@import "./layout/landing-page/contact-cols";
+@import "./layout/landing-page/footer";
+
+// Layout app
+@import "./layout/app/entry";
+@import "./layout/app/header";
+@import "./layout/app/sidebar";
+@import "./layout/app/dashboard";
+@import "./layout/app/empty";
+@import "./layout/app/recipe";
+@import "./layout/app/recipes-list";
+@import "./layout/app/schedule";
+@import "./layout/app/schedules-list";

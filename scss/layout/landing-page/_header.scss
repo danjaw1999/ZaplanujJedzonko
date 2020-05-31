@@ -1,0 +1,38 @@
+header {
+  background-color: $dark-grey-color;
+  height: 120px;
+  text-align: center;
+  width: 100%;
+
+  .container {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    h1 {
+      margin-right: 10%;
+      font-size: 3rem;
+    }
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          .orange-color {
+            color: $light-orange-color;
+          }
+          a {
+            color: $white-color;
+            margin-right: 1em;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+          }
+          a:hover {
+            color: $light-orange-color;
+          }
+        }
+      }
+    }
+  }
+}

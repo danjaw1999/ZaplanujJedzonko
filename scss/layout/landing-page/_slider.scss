@@ -1,0 +1,40 @@
+.slider {
+  background-color: $white-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 40rem;
+  max-width: 1500px;
+  height: 35rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+  cursor: pointer;
+}
+.slide {
+  display: none;
+  padding: 0 15%;
+}
+
+.visible-slide {
+  display: block;
+}
+
+.slide h3 {
+  font-size: 3.5rem;
+}
+.fas {
+  font-size: 3rem;
+}
+
+.slide p {
+  font-size: 2.5rem;
+}
+.slide h3,
+.fas,
+.slide p {
+  text-align: center;
+}

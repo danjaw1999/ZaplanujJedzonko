@@ -1,0 +1,42 @@
+section.call-to-action {
+    background-color: $dark-grey-color;
+    height: 14rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    div.container {
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            width: 70%;
+            h3 {
+                color: $white-color;
+                font-size: 2rem;
+                margin-bottom: 1.2rem;
+            }
+            p {
+                color: $white-color;
+                font-size: 1.7rem;
+            }
+        }
+        a {
+            background-color: $custom-orange-color;
+            color: $white-color;
+            font-size: 1.3rem;
+            font-weight: 700;
+            height: 3rem;
+            width: 11rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a:hover {
+            background-color: $light-orange-color;
+            cursor: pointer;
+        }   
+    } 
+}

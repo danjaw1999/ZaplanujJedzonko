@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="icon" type="image/png" href="./images/ico.gif">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <header class="header-app">
+        <h1>
+            <a href="index.html">
+                <span id="first">Zaplanuj</span>
+                <span id="second">Jedzonko</span>
+            </a>
+        </h1>
+        <div class="header-user">
+            <p class="user-name">Imię</p>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+    <section class="app-container">
+        <section class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="app.html">Pulpit</a></li>
+                    <li><a href="recipes.html">Przepisy</a></li>
+                    <li><a href="schedules.html">Plany</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="main-app-section">
+            <div class="main-app-section-content">
+                <div class="schedule-list">
+                    <div class="schedule-list-head">
+                        <h2>Lista planów</h2>
+                        <i class="fas fa-plus-square button-add-schedule"></i>
+                    </div>
+                    <div class="schedule-list-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nazwa</th>
+                                    <th>Opis</th>
+                                    <th>Tydzień</th>
+                                    <th>Akcje</th>
+                                </tr>
+                            </thead>
+                            <tbody class="schedule-table-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <section class="edit-schedule-container">
+                    <section class="title-new-schedule">
+                        <h3>EDYTUJ PLAN</h3>
+                        <a href="#">Zapisz i zamknij</a>
+                    </section>
+                    <section class="name-new-schedule">
+                        <h2>Nazwa planu</h2>
+                        <input type="text" placeholder="Podaj nazwę planu" />
+                    </section>
+                    <section class="dsc-new-schedule">
+                        <h2>Opis planu</h2>
+                        <textarea placeholder="Podaj opis planu" rows="5"></textarea>
+                    </section>
+                    <section class="nr-new-schedule">
+                        <h2>Numer tygodnia</h2>
+                        <input type="number" placeholder="0" min="1" value="1"/>
+                    </section>
+                    <table class="new-schedules">
+                        <tr class="titles-meals">
+                            <th></th>
+                            <th>ŚNIADANIE</th>
+                            <th>DRUGIE ŚNIADANIE</th>
+                            <th>ZUPA</th>
+                            <th>DRUGIE DANIE</th>
+                            <th>KOLACJA</th>
+                        </tr>
+                        <tr class="monday">
+                            <td>PONIEDZIAŁEK</td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="tuesday">
+                            <td>WTOREK</td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="wednesday">
+                            <td>ŚRODA</td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="thursday">
+                            <td>CZWARTEK</td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="friday">
+                            <td>PIĄTEK</td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="saturday">
+                            <td>SOBOTA</td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="sunday">
+                            <td>NIEDZIELA</td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                            <td>
+                                <select class="meal">
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+        </section>
+    </section>
+
+    <script src="./js/schedule.js"></script>
+</body>
+
+</html>
