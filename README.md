@@ -14,7 +14,7 @@
   - LocalStorage
 
 ## Quick Start
-* [demo with adds ;/](https://zaplanujedzonko.5v.pl) on website
+* [demo](https://danjaw1999.github.io/ZaplanujJedzonko/.) on website
 
 #### 🛠 Install
 
