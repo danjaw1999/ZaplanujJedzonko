@@ -13,7 +13,8 @@
   border: 1px dashed $green-color !important;
   color: $green-color !important;
 }
-
+.tbody {
+}
 .widget-recipe {
   display: flex;
   flex-direction: column;
@@ -106,13 +107,14 @@
     }
   }
 }
-
-.table-app-section {
+tbody {
   width: 100%;
+}
+.table-app-section {
+  width: 100% !important;
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   .schedule-view {
     width: 100%;
