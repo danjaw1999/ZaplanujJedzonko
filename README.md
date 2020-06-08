@@ -14,7 +14,8 @@
   - LocalStorage
 
 ## Quick Start
-
+* [demo]:
+https://zaplanujedzonko.5v.pl
 #### 🛠 Install
 
 ```
@@ -25,5 +26,4 @@ git clone https://github.com/danjaw1999/ZaplanujJedzonko.git
 npm i
 ```
 
-* [demo]:
-https://zaplanujedzonko.5v.pl
+
