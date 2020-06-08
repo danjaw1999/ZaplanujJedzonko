@@ -14,7 +14,7 @@
   - LocalStorage
 
 ## Quick Start
-* [localhost](https://zaplanujedzonko.5v.pl) on website
+* [demo with adds ;/](https://zaplanujedzonko.5v.pl) on website
 
 #### 🛠 Install
 
